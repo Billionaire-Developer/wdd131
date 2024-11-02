@@ -40,7 +40,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 60%;
+  width: 58%;
   margin: 0 auto;
 }
 
@@ -65,10 +65,8 @@ main {
 }
 
 .card img {
-    float: right;
-    width: 200px;
- 
-  
+  float: right;
+  width: 190px;
   border-radius: 10px;
 }
 
@@ -92,7 +90,11 @@ main {
 footer{
   background-color: #23527c;
   max-width: 800px;
+  height: 40px;
   margin: 0 auto;
   text-align: center;
   color: #fff;
+}
+#lastModified{
+  color: yellow;
 }
