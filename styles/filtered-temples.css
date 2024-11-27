@@ -173,9 +173,3 @@ footer p {
 	color: #d9d9d9;
 	line-height: 1.8em;
 }
-
-/* @media only screen and (min-width:640px){
-    .galery {
-        grid-template-columns: 1fr 1fr;
-    }
-} */
