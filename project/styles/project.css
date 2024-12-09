@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  
+  .menu {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #88abfd;
+    gap: 1rem;
+    font-family: "Mochiy Pop One", sans-serif;
+  }
+  
+  .navigation {
+    display: none;
+  }
+  
+  .hamburger {
+    height: 50px;
+    width : 50px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease;
+  }
+  
+  .hamburger span:nth-child(1) {
+    top: 25%;
+  }
+  
+  .hamburger span:nth-child(3) {
+    top: 75%;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0%;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  .off-screen-menu {
+    background-color: seashell;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    transition: 1s ease;
+    font-family: "Caveat", cursive;
+    z-index: 900;
+  }
+  
+  .off-screen-menu.active {
+    right: 0;
+  
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  footer {
+      display: flex;
+      background-color: beige;
+      font-family: "Caveat", cursive;
+      font-weight: 800;
+      font-size: 1rem;
+      font-style: normal;
+      padding: 1rem;
+      justify-content: center;
+    }
+  
+  .page-card {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: none;
+  }
+  
+  .label {
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-content: space-around;
+    background-color: seashell;
+    display: block;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-width: 10rem;
+  }

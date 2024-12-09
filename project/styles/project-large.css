@@ -1,0 +1,45 @@
+@media (min-width:43.5em) {
+  
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      font-size: 1.5rem;
+      
+    }
+    .hamburger{
+      display: none;
+    }
+    
+    .navigation a {
+      color: rgb(0, 0, 0);
+      padding: 1rem;
+      font-family: "Mochiy Pop One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .navigation a:hover {
+      background-color: yellow;
+    }
+    
+    .off-screen-menu{
+      display: none;
+    }
+  
+    footer {
+      display: flex;
+      background-color: beige;
+      font-family: "Caveat", cursive;
+      font-weight: 600;
+      font-size: 1.5rem;
+      font-style: normal;
+      padding: 1rem;
+      justify-content: center;
+    }
+    img {
+      width: 75%;
+      height: auto;
+      display: block;
+    }
+  }
